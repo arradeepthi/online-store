@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .header{
+            width: 300px;
+            margin-bottom: 10px;
+        }
+        .formstyle{
+            padding: 45px;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+        }
+        .container{
+            margin-left: 580px;
+            margin-top: 120px;
+            border: 1px solid black;
+            width: 300px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 align="center">Sign Up</h1>
+        </div>
+        <div class="formstyle">
+            <form name="form1" method="POST">
+                <input type="text" name="name" placeholder="Name" required><br><br>
+                <input type="email" name="email" placeholder="Email" required><br><br>
+                <input type="number" name="phno" placeholder="Phone Number" required><br><br>
+                <input type="text" name="add" placeholder="Address" required><br><br>
+                <input type="password" name="pwd" placeholder="Password" required><br><br>
+                <input type="password" name="cpwd" placeholder="Confirm Password" required><br><br>
+                <button>Sign Up</button><br><br>
+                <p>Already have an account?<p><a href="http://127.0.0.1:5500/assets/login.html">Log In</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
