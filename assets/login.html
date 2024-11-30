@@ -3,84 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
     <style>
-    .container{
-        margin: 0px;
-        background-color: #accffe;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .login{
-        height: 450px;
-        width: 500px;
-        border: 1px solid red;
-        background-color: rgba(235, 245, 239, 0.938);
-    }
-    h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    .p1{
-        text-align: center;
-    }
-    .formstyle input{
-        border: 1px solid green;
-        height: 30px;
-        width: 70%;
-        font-size: 1rem;
-        border-radius: 4px;
-        padding: 0 20px;
-        margin-left: 52px;
-        margin-right: 52px;
-        outline: none;
-        margin-top: 12px;
-    }   
-    .pwd{
-        position: relative;
-        margin-left: 325px;
-    }
-    .formstyle button{
-        height: 40px;
-        width: 78%;
-        margin-left: 52px;
-        margin-right: 52px;
-        font-size: 1.2rem;
-    }
-    a{
-        text-decoration: none;
-    }
-    .head{
-        display: flex;
-    }
-    .fh{
-        padding-left: 25px;
-    }
-    
+        *{
+            margin: 0;
+        }
+        input{
+            height: 30px;
+            width: 80%;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+        .inner{
+            position: relative;
+            width: 500px;
+        }
+        .formstyle{
+            height: 300px;
+            width: 100%;
+            position: relative;
+            padding: 25px;
+            margin-left: -50px;
+            background-color: white;
+        }
+        h3{
+            text-transform: uppercase;
+            font-size: 35px;
+            margin-bottom: 33px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f5a5;
+        }
+        .img1{
+            position: absolute;
+            margin-top: -380px;
+            left: 420px;
 
+        }
+        form input{
+            width: 100%;
+            padding-bottom: 10px;
+            font-size: 1rem;
+        }
+        form button{
+            height: 50px;
+            width: 78%;
+            margin-left: 52px;
+            margin-right: 52px;
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+        .pwd{
+            margin-left: 380px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="login">
-            <div class="head">
-                <img src="/assets/images/6.jpg" height="100px" width="100px">
-                <h1 class="fh">Welcome Back!</h1>
-            </div>
+        <div class="inner">
             <div class="formstyle">
-                <form name="form1" method="POST">
-                    <input type="text" name="uname" class="uname" placeholder="Username" required>
+            <form>
+                <h3>Welcome Back!</h3>
+                <input type="text" name="uname" placeholder="Username" required>
                     <br><br>
-                    <input type="password" name="pwd" class="pwd" placeholder="Password" required>
+                    <input type="password" name="pwd" placeholder="Password" required>
                     <br>
                     <p class="pwd"><a href="#">Forgot Password?</a></p>
                     <button value="Login">Login</button>
-                </form>
-            </div>
-            <p class="p1" style=" text-decoration: none">Are you here for the first time? <a href="#">Sign Up</a></p>
-            </div>
+                    <br><br>
+                    <p align="center">Don't have an account? <a href="#">Sing Up</a></p>
+            </form>
+        </div>
+            <img src="/assets/images/7.png" height="400px" width="400px" class="img1">
         </div>
     </div>
 </body>
